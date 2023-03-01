@@ -170,7 +170,6 @@ body {
 .header-address-list {
   display: flex;
   list-style: none;
-  font-style: normal;
   gap: 40px;
 }
 
@@ -225,7 +224,6 @@ body {
   border-radius: 4px;
   font-size: 16px;
   font-weight: 500;
-  font-style: normal;
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: var(--brand-color-white);
@@ -472,10 +470,8 @@ body {
   border: 1px solid var(--brand-color-accent);
   border-radius: 4px;
   cursor: pointer;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -529,7 +525,6 @@ body {
   top: 0;
   height: 100%;
   padding: 40px 32px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
@@ -643,14 +638,12 @@ body {
 
 .footer-subscribe {
   margin-right: 24px;
-  position: relative;
   /* display: flex;
   flex-wrap: wrap;
   justify-content: space-between; */
 }
 
 .footer-subscribe-heading {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -659,31 +652,26 @@ body {
   margin-bottom: 16px;
 }
 
+.footer-email-form {
+  display: flex;
+  gap: 24px;
+}
+
 .footer-email {
   width: 264px;
   height: 40px;
   background-color: transparent;
-  outline: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
-  margin-right: 24px;
 }
 
 .footer-btn {
-  position: absolute;
-  top: 40px;
-  left: 280px;
-  width: 165px;
-  height: 40px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -761,7 +749,6 @@ body {
 }
 
 .modal-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -791,8 +778,6 @@ body {
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
@@ -808,8 +793,6 @@ body {
 }
 
 .input-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -834,19 +817,14 @@ body {
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
-  color: rgba(117, 117, 117, 0.5);
   padding: 8px 16px;
   resize: none;
 }
 
 .check-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
@@ -854,6 +832,20 @@ body {
   color: #757575;
   display: flex;
   margin-bottom: 24px;
+  align-items: center;
+}
+
+.check-text-link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: var(--brand-color-primary-brand);
+  margin-left: 4px;
+  text-decoration: underline;
+}
+
+.check-text-link:is(:hover, :focus) {
+  color: var(--brand-color-pressed-state);
 }
 
 .check-text::before {
@@ -878,7 +870,6 @@ body {
 }
 
 .modal-btn-send {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -890,9 +881,8 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  position: absolute;
-  margin: 0;
-  transform: translate(50%);
+  display: block;
+  margin: 0 auto;
 }
 
 .modal-btn-send:is(:hover, :focus) {
