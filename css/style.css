@@ -636,13 +636,6 @@ body {
   background-color: var(--brand-color-success);
 }
 
-.footer-subscribe {
-  margin-right: 24px;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; */
-}
-
 .footer-subscribe-heading {
   font-weight: 500;
   font-size: 16px;
@@ -685,6 +678,8 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-btn:is(:hover, :focus) {
@@ -731,6 +726,9 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:is(:hover, :focus) {
@@ -781,14 +779,16 @@ body {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
-  padding-left: 36px;
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus {
+.modal-input:is(:hover, :focus) {
   border-color: var(--brand-color-primary-brand);
 }
 
-.modal-input:focus + .modal-icon {
+.modal-input:is(:hover, :focus) + .modal-icon {
   fill: var(--brand-color-primary-brand);
 }
 
@@ -822,6 +822,11 @@ body {
   letter-spacing: 0.04em;
   padding: 8px 16px;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-message:is(:hover, :focus) {
+  border-color: var(--brand-color-primary-brand);
 }
 
 .check-text {
@@ -842,6 +847,7 @@ body {
   color: var(--brand-color-primary-brand);
   margin-left: 4px;
   text-decoration: underline;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-text-link:is(:hover, :focus) {
@@ -883,6 +889,7 @@ body {
   border: none;
   display: block;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-send:is(:hover, :focus) {
